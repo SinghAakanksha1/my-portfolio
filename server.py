@@ -104,7 +104,7 @@ def submit_form():
             with smtplib.SMTP(host='smtp.office365.com', port=587) as smtp:
                 smtp.ehlo()
                 smtp.starttls()
-                smtp.login('aakanksha1singh@outlook.com', 'Aakanksha12!@')
+                smtp.login('##Email_id_from_which_email_will_be_sent##', '##Email_password_from_which_email_will_be_sent##')
                 smtp.send_message(email)
                 print('Email is send successfully')
 
